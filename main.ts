@@ -21,11 +21,14 @@ while (playAgain) {
     if (input.logoIsPressed()) {
 
         if (cislo < tajne_cislo) {
-        basic.showString("vetsi")}
+        basic.showString("<")}
 
         if (cislo > tajne_cislo) {
-            basic.showString("mensi")}
+            basic.showString(">")}
     
         if (cislo = tajne_cislo) {
-        basic.showString("WIN")}
+            music.play(music.stringPlayable("", 120), music.PlaybackMode.UntilDone)
+        basic.showString("WIN")
+        whaleysans.showNumber(pokusy)
+        }
 }}
